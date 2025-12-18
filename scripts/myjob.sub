@@ -1,0 +1,21 @@
+#!/bin/bash
+# FILENAME:  myjob.sub
+
+#SBATCH -A csml
+#SBATCH -p a30
+#SBATCH --nodes=1 --gpus-per-node=1 --mem=60G
+#SBATCH --time=1:30:00
+#SBATCH --job-name ahhhh
+
+module load conda
+source activate $RCAC_SCRATCH/llm-script
+
+#python aif/vlm-bucket.py
+#python aif/vlm-mcq.py
+python aif/llm-verification.py
+#python aif/rohan-verify.py
+
+# followed by sbatch myjob.sub
+# maintain the status at:
+# https://gateway.gilbreth.rcac.purdue.edu/pun/sys/dashboard/activejobs
+
