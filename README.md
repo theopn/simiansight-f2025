@@ -1,2 +1,4 @@
-# simiansight-f2025
-Work for SimianSight (AI Forge VLM Wildlife Conservation Project)
+# SimianSight Fall 2025
+
+- `rcac.md`: A quick guide on using Purdue RCAC Gilbreth server
+
